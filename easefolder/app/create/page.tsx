@@ -130,6 +130,7 @@ export default function CreatePage() {
   const [messages, setMessages] = useState<string[]>([
     "Start by telling me what you want to build.",
   ]);
+  const [mobilePanel, setMobilePanel] = useState<"chat" | "preview">("chat");
   const [projectId, setProjectId] = useState<string>("");
   const [isSessionReady, setIsSessionReady] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -312,8 +313,37 @@ export default function CreatePage() {
       <Navbar isLightMode={true} />
       <main className="mx-auto flex h-[calc(100vh-1rem)] max-w-4xl flex-col border-dotted border-white/15 px-4 pb-4 pt-24 sm:px-6 sm:pt-28 md:border-x">
         <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b0b0b] shadow-[0_22px_70px_rgba(0,0,0,0.38)]">
+          <div className="flex items-center gap-2 border-b border-white/10 bg-[#0f0f0f] p-2 lg:hidden">
+            <button
+              type="button"
+              onClick={() => setMobilePanel("chat")}
+              className={`flex-1 rounded-xl px-3 py-2 text-sm font-medium transition ${
+                mobilePanel === "chat"
+                  ? "bg-white text-[#101114]"
+                  : "bg-white/5 text-white/70"
+              }`}
+            >
+              Chat
+            </button>
+            <button
+              type="button"
+              onClick={() => setMobilePanel("preview")}
+              className={`flex-1 rounded-xl px-3 py-2 text-sm font-medium transition ${
+                mobilePanel === "preview"
+                  ? "bg-white text-[#101114]"
+                  : "bg-white/5 text-white/70"
+              }`}
+            >
+              Preview
+            </button>
+          </div>
+
           <div className="grid h-full min-h-0 flex-1 lg:grid-cols-[380px_minmax(0,1fr)]">
-            <aside className="flex h-full min-h-0 w-full flex-col overflow-hidden border-b border-white/8 bg-[#111111] p-4 text-white lg:border-b-0 lg:border-r">
+            <aside
+              className={`flex h-full min-h-0 w-full flex-col overflow-hidden border-b border-white/8 bg-[#111111] p-4 text-white lg:border-b-0 lg:border-r ${
+                mobilePanel === "preview" ? "hidden lg:flex" : "flex"
+              }`}
+            >
               <div className="mb-4 flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.35em] text-white/45">
@@ -370,14 +400,18 @@ export default function CreatePage() {
               <div className="mt-4">
                 <PromptInputBox
                   placeholder="Ask the AI to create a project structure..."
-                  className="border-white/8 bg-[#151515]"
+                  className="w-full border-white/8 bg-[#151515]"
                   isSubmitting={isSubmitting}
                   onSend={handleSendMessage}
                 />
               </div>
             </aside>
 
-            <section className="flex h-full min-h-0 flex-1 flex-col overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(8,8,8,1)_100%)] p-4 text-white sm:p-6">
+            <section
+              className={`flex h-full min-h-0 flex-1 flex-col overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(8,8,8,1)_100%)] p-4 text-white sm:p-6 ${
+                mobilePanel === "chat" ? "hidden lg:flex" : "flex"
+              }`}
+            >
               <div className="mb-4 flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.35em] text-white/45">
