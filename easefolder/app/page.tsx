@@ -5,29 +5,36 @@ export default function Home() {
   const steps = [
     {
       number: "01",
-      title: "Describe your project",
+      title: "Describe your SaaS idea",
       description:
-        "Write a short prompt about the app, website, or folder structure you want. The clearer the input, the better the result.",
+        "Tell EaseFolder what you want to build, like a SaaS app, dashboard, or starter project. A clear prompt gives the AI a stronger foundation.",
     },
     {
       number: "02",
-      title: "Choose a structure",
+      title: "Let AI draft the tree",
       description:
-        "Pick a starter template or let EaseFolder generate a custom layout for you. You can preview the tree before downloading.",
+        "The AI creates a clean project structure based on your request and current stack, then shows it in the folder explorer.",
     },
     {
       number: "03",
-      title: "Refine the folders",
+      title: "Refine it in place",
       description:
-        "Add, rename, or remove files and folders until it matches your workflow. Everything stays easy to edit.",
+        "Rename, add, delete, or move folders and files directly in the explorer until the structure matches your product.",
     },
     {
       number: "04",
-      title: "Export and ship",
+      title: "Export the ZIP",
       description:
-        "Download the structure as a ZIP or send it directly to GitHub so you can start building immediately.",
+        "Download the final project as a ZIP and start coding immediately with the exact folder tree you approved.",
     },
   ];
+
+  const stepBackgrounds = [
+  "linear-gradient(135deg, rgba(0, 114, 143, 0.18) 0%, rgba(0, 114, 143, 0.06) 100%)",
+  "linear-gradient(135deg, rgba(76, 175, 80, 0.22) 0%, rgba(76, 175, 80, 0.07) 100%)",
+  "linear-gradient(135deg, rgba(255, 152, 0, 0.26) 0%, rgba(255, 152, 0, 0.08) 100%)",
+  "linear-gradient(135deg, rgba(156, 39, 176, 0.30) 0%, rgba(156, 39, 176, 0.10) 100%)",
+];
 
   return (
     <div className="min-h-screen px-3 py-2 sm:px-6 lg:px-8">
@@ -38,11 +45,10 @@ export default function Home() {
             Build Your Project Folder Structure in Seconds
           </h1>
           <p className="max-w-xl text-xs text-white/90 sm:text-sm lg:text-base">
-            Generate your project structure with AI - download it as a ZIP or
-            push it directly to GitHub.
+            Generate your project structure with AI - download it as a ZIP
           </p>
           <a
-            href="#create"
+            href="/create"
             className="flex items-center justify-center rounded-xl bg-[#fffefd] px-4 py-3 text-sm font-medium text-black transition duration-200 hover:bg-[#99f3f9] lg:hidden"
           >
             <span className="text-shimmer">Create Project</span>
@@ -81,7 +87,7 @@ export default function Home() {
               return (
                 <div
                   key={step.number}
-                  className="grid min-h-[180px] grid-cols-1 border border-dotted border-[rgba(0,114,143,0.7)] md:min-h-[260px] md:grid-cols-2"
+                  className="grid min-h-45 grid-cols-1 border border-dotted border-[rgba(0,114,143,0.7)] md:min-h-65 md:grid-cols-2"
                 >
                   <div
                     className={`flex items-center justify-center border-dotted border-[rgba(0,114,143,0.7)] p-6 md:border-r md:p-10 ${
@@ -89,8 +95,11 @@ export default function Home() {
                         ? "border-b md:border-b-0"
                         : "md:order-2 md:border-l md:border-r-0"
                     }`}
+                    style={{
+                      background: stepBackgrounds[index % stepBackgrounds.length],
+                    }}
                   >
-                    <div className="flex h-24 w-24 items-center justify-center text-5xl font-semibold text-[rgba(0,114,143,1)] sm:h-32 sm:w-32 sm:text-7xl">
+                    <div className="flex h-24 w-24 items-center justify-center rounded-full border border-white/30 bg-white/10 text-5xl font-semibold text-[rgba(0,114,143,1)] shadow-[0_10px_30px_rgba(0,114,143,0.12)] backdrop-blur-sm sm:h-32 sm:w-32 sm:text-7xl">
                       {step.number}
                     </div>
                   </div>
@@ -105,10 +114,10 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.3em] text-[rgba(0,114,143,1)]/90 sm:hidden">
                       Step {step.number}
                     </p>
-                    <h3 className="font-heading text-2xl font-bold text-white sm:mt-0 sm:text-4xl">
+                    <h3 className="font-heading text-2xl font-bold text-black sm:mt-0 sm:text-4xl">
                       {step.title}
                     </h3>
-                    <p className="mt-4 max-w-xl text-sm leading-7 text-white/80 sm:text-base">
+                    <p className="mt-4 max-w-xl text-sm leading-7 text-zinc-700 sm:text-base">
                       {step.description}
                     </p>
                   </div>

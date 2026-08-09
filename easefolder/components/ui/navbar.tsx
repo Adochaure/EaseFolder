@@ -5,7 +5,7 @@ interface NavbarProps {
 export default function Navbar({ isLightMode }: NavbarProps) {
   const navItems = [
     {
-      name: "Features",
+      name: "About us",
       href: "#features",
     },
     {
@@ -18,7 +18,7 @@ export default function Navbar({ isLightMode }: NavbarProps) {
   return (
     <nav className="fixed inset-x-0 top-4 z-50 flex justify-center px-2">
       <div
-        className={`flex max-w-full flex-wrap items-center gap-2 overflow-x-auto rounded-xl border p-1 shadow-lg backdrop-blur-2xl sm:flex-nowrap ${
+        className={`flex max-w-full flex-wrap items-center gap-5 overflow-x-auto rounded-xl border p-1 shadow-[0_18px_50px_rgba(0,0,0,0.28)] backdrop-blur-2xl sm:flex-nowrap ${
           isLightMode
             ? "border-white/40 bg-white/25 text-zinc-900 shadow-black/5"
             : "border-zinc-700 bg-zinc-900/60 text-white"
@@ -51,20 +51,11 @@ export default function Navbar({ isLightMode }: NavbarProps) {
         </div>
 
 
-        <button
-          type="button"
-          className={`rounded-xl px-3 py-2 text-xs transition duration-200 sm:px-4 sm:py-3 sm:text-sm ${
-            isLightMode
-              ? "border border-white/40 bg-black text-white hover:bg-white/30"
-              : "border border-zinc-700 bg-zinc-900/80 text-white hover:bg-zinc-800"
-          }`}
-        >
-          Sign In
-        </button>
+  
 
         <a
-          href="#create"
-          className="hidden items-center justify-center rounded-xl bg-[#fffefd] px-3 py-2 text-xs font-medium text-black transition duration-200 hover:bg-[#99f3f9] sm:px-4 sm:py-3 sm:text-sm lg:flex"
+          href="/create"
+          className="hidden items-center justify-center rounded-xl bg-[#020202] px-3 py-2 text-xs font-medium text-black transition duration-200 hover:bg-[#ffffff] sm:px-4 sm:py-3 sm:text-sm lg:flex"
         >
           <span className="text-shimmer">Create Project</span>
         </a>
