@@ -582,6 +582,10 @@
     height: calc(var(--spacing) * 11);
   }
 
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
@@ -652,6 +656,10 @@
 
   .w-11 {
     width: calc(var(--spacing) * 11);
+  }
+
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
 
   .w-24 {
@@ -727,7 +735,7 @@
     resize: none;
   }
 
-  .scrollbar-none {
+  .\[scrollbar-width\:none\], .scrollbar-none {
     scrollbar-width: none;
   }
 
@@ -807,6 +815,10 @@
 
   .rounded-2xl {
     border-radius: calc(var(--radius) * 1.8);
+  }
+
+  .rounded-3xl {
+    border-radius: calc(var(--radius) * 2.2);
   }
 
   .rounded-\[1\.1rem\] {
@@ -935,16 +947,6 @@
     }
   }
 
-  .border-white\/25 {
-    border-color: #ffffff40;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .border-white\/25 {
-      border-color: color-mix(in oklab, var(--color-white) 25%, transparent);
-    }
-  }
-
   .border-white\/30 {
     border-color: #ffffff4d;
   }
@@ -981,6 +983,10 @@
 
   .bg-\[\#0b0b0b\] {
     background-color: #0b0b0b;
+  }
+
+  .bg-\[\#0f0f0f\] {
+    background-color: #0f0f0f;
   }
 
   .bg-\[\#020202\] {
@@ -1294,6 +1300,10 @@
     padding-left: 0;
   }
 
+  .pl-1 {
+    padding-left: var(--spacing);
+  }
+
   .text-center {
     text-align: center;
   }
@@ -1499,16 +1509,6 @@
     }
   }
 
-  .text-white\/85 {
-    color: #ffffffd9;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-white\/85 {
-      color: color-mix(in oklab, var(--color-white) 85%, transparent);
-    }
-  }
-
   .text-white\/90 {
     color: #ffffffe6;
   }
@@ -1643,6 +1643,10 @@
     outline-style: none;
   }
 
+  .\[-ms-overflow-style\:none\] {
+    -ms-overflow-style: none;
+  }
+
   .perspective-\[1000px\] {
     perspective: 1000px;
   }
@@ -1748,16 +1752,6 @@
       }
     }
 
-    .hover\:bg-white\/20:hover {
-      background-color: #fff3;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-white\/20:hover {
-        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
-      }
-    }
-
     .hover\:bg-white\/30:hover {
       background-color: #ffffff4d;
     }
@@ -1809,12 +1803,20 @@
       display: none;
     }
 
+    .sm\:h-28 {
+      height: calc(var(--spacing) * 28);
+    }
+
     .sm\:h-32 {
       height: calc(var(--spacing) * 32);
     }
 
     .sm\:min-h-26 {
       min-height: calc(var(--spacing) * 26);
+    }
+
+    .sm\:w-28 {
+      width: calc(var(--spacing) * 28);
     }
 
     .sm\:w-32 {
@@ -2059,6 +2061,10 @@
     .dark\:ring-white\/10:is(.dark *) {
       --tw-ring-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
+  }
+
+  .\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
+    display: none;
   }
 
   @keyframes shimmer {

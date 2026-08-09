@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center pb-0">
           <ImagesBadge
-            text="EaseFolder"
+            text="EaseFolder -> Click me!!!"
             images={[
               "https://skillicons.dev/icons?i=js",
               "https://skillicons.dev/icons?i=css",
@@ -100,8 +100,12 @@ export default function Home() {
                       background: stepBackgrounds[index % stepBackgrounds.length],
                     }}
                   >
-                    <div className="flex h-24 w-24 items-center justify-center rounded-full border border-white/30 bg-white/10 text-5xl font-semibold text-[rgba(0,114,143,1)] shadow-[0_10px_30px_rgba(0,114,143,0.12)] backdrop-blur-sm sm:h-32 sm:w-32 sm:text-7xl">
-                      {step.number}
+                    <div className="h-full w-full overflow-hidden border border-white/30 bg-white/10 shadow-[0_10px_30px_rgba(0,114,143,0.12)] backdrop-blur-sm">
+                      <img
+                        src={`/${index + 1}.png`}
+                        alt={`Step ${step.number}`}
+                        className="h-full w-full object-cover"
+                      />
                     </div>
                   </div>
 

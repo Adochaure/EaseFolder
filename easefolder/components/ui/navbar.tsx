@@ -16,7 +16,7 @@ export default function Navbar({ isLightMode }: NavbarProps) {
   ];
 
   return (
-    <nav className="fixed inset-x-0 top-4 z-50 flex justify-center px-2">
+    <nav className="fixed inset-x-0 top-4 z-50 flex justify-center px-2 pl-1">
       <div
         className={`flex max-w-full flex-wrap items-center gap-5 overflow-x-auto rounded-xl border p-1 shadow-[0_18px_50px_rgba(0,0,0,0.28)] backdrop-blur-2xl sm:flex-nowrap ${
           isLightMode

@@ -131,6 +131,7 @@ function CreatePage() {
     const [messages, setMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
         "Start by telling me what you want to build."
     ]);
+    const [mobilePanel, setMobilePanel] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("chat");
     const [projectId, setProjectId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [isSessionReady, setIsSessionReady] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -327,212 +328,243 @@ function CreatePage() {
                 isLightMode: true
             }, void 0, false, {
                 fileName: "[project]/app/create/page.tsx",
-                lineNumber: 312,
+                lineNumber: 313,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "mx-auto flex h-[calc(100vh-1rem)] max-w-4xl flex-col border-dotted border-white/15 px-4 pb-4 pt-24 sm:px-6 sm:pt-28 md:border-x",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex h-full min-h-0 flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b0b0b] shadow-[0_22px_70px_rgba(0,0,0,0.38)]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid h-full min-h-0 flex-1 lg:grid-cols-[380px_minmax(0,1fr)]",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
-                                className: "flex h-full min-h-0 w-full flex-col overflow-hidden border-b border-white/8 bg-[#111111] p-4 text-white lg:border-b-0 lg:border-r",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mb-4 flex items-center justify-between",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-xs uppercase tracking-[0.35em] text-white/45",
-                                                    children: "Workspace"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/create/page.tsx",
-                                                    lineNumber: 319,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                    className: "mt-2 font-heading text-2xl font-bold",
-                                                    children: "EaseFolder AI"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/create/page.tsx",
-                                                    lineNumber: 322,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/create/page.tsx",
-                                            lineNumber: 318,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/create/page.tsx",
-                                        lineNumber: 317,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "scrollbar-none flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto pr-1",
-                                        children: [
-                                            messages.map((message, index)=>{
-                                                const isThinkingMessage = isSubmitting && index === messages.length - 1 && message === "Thinking...";
-                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: `flex items-end gap-2 ${index % 2 === 0 ? "justify-start" : "justify-end"}`,
-                                                    children: [
-                                                        index % 2 === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/logo.png",
-                                                            alt: "EaseFolder",
-                                                            className: "h-6 w-6 shrink-0 rounded-full border border-white/10 object-cover"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/create/page.tsx",
-                                                            lineNumber: 343,
-                                                            columnNumber: 25
-                                                        }, this) : null,
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: `max-w-[85%] rounded-[1.25rem] px-4 py-3 text-sm leading-6 transition duration-200 hover:-translate-y-0.5 ${index % 2 === 0 ? "bg-white/6 text-white" : "bg-white/12 text-white"}`,
-                                                            children: isThinkingMessage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-shimmer font-medium",
-                                                                children: "Thinking..."
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/create/page.tsx",
-                                                                lineNumber: 357,
-                                                                columnNumber: 27
-                                                            }, this) : message
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/create/page.tsx",
-                                                            lineNumber: 349,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, index, true, {
-                                                    fileName: "[project]/app/create/page.tsx",
-                                                    lineNumber: 336,
-                                                    columnNumber: 21
-                                                }, this);
-                                            }),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                id: "latest-message-anchor"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/create/page.tsx",
-                                                lineNumber: 367,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/create/page.tsx",
-                                        lineNumber: 328,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-4",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$ai$2d$prompt$2d$box$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PromptInputBox"], {
-                                            placeholder: "Ask the AI to create a project structure...",
-                                            className: "border-white/8 bg-[#151515]",
-                                            isSubmitting: isSubmitting,
-                                            onSend: handleSendMessage
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/create/page.tsx",
-                                            lineNumber: 371,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/create/page.tsx",
-                                        lineNumber: 370,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/create/page.tsx",
-                                lineNumber: 316,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                                className: "flex h-full min-h-0 flex-1 flex-col overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(8,8,8,1)_100%)] p-4 text-white sm:p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mb-4 flex items-center justify-between",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-2 border-b border-white/10 bg-[#0f0f0f] p-2 lg:hidden",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>setMobilePanel("chat"),
+                                    className: `flex-1 rounded-xl px-3 py-2 text-sm font-medium transition ${mobilePanel === "chat" ? "bg-white text-[#101114]" : "bg-white/5 text-white/70"}`,
+                                    children: "Chat"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/create/page.tsx",
+                                    lineNumber: 317,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    onClick: ()=>setMobilePanel("preview"),
+                                    className: `flex-1 rounded-xl px-3 py-2 text-sm font-medium transition ${mobilePanel === "preview" ? "bg-white text-[#101114]" : "bg-white/5 text-white/70"}`,
+                                    children: "Preview"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/create/page.tsx",
+                                    lineNumber: 328,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/create/page.tsx",
+                            lineNumber: 316,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid h-full min-h-0 flex-1 lg:grid-cols-[380px_minmax(0,1fr)]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                                    className: `flex h-full min-h-0 w-full flex-col overflow-hidden border-b border-white/8 bg-[#111111] p-4 text-white lg:border-b-0 lg:border-r ${mobilePanel === "preview" ? "hidden lg:flex" : "flex"}`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mb-4 flex items-center justify-between",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs uppercase tracking-[0.35em] text-white/45",
-                                                        children: "Folder Preview"
+                                                        children: "Workspace"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/create/page.tsx",
-                                                        lineNumber: 383,
+                                                        lineNumber: 349,
                                                         columnNumber: 19
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "mt-2 font-heading text-2xl font-bold sm:text-3xl",
-                                                        children: "Live folder preview"
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                        className: "mt-2 font-heading text-2xl font-bold",
+                                                        children: "EaseFolder AI"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/create/page.tsx",
-                                                        lineNumber: 386,
+                                                        lineNumber: 352,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/create/page.tsx",
-                                                lineNumber: 382,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                type: "button",
-                                                onClick: handleExportZip,
-                                                disabled: isExporting,
-                                                className: "rounded-xl border border-white/70 bg-white px-4 py-2 text-sm font-semibold text-[#101114] shadow-[0_14px_35px_rgba(255,255,255,0.16)] transition duration-200 hover:-translate-y-0.5 hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-70",
-                                                children: isExporting ? "Exporting..." : "Export ZIP"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/create/page.tsx",
-                                                lineNumber: 390,
+                                                lineNumber: 348,
                                                 columnNumber: 17
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/create/page.tsx",
-                                        lineNumber: 381,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$project$2d$explorer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ProjectExplorer"], {
-                                        projectName: "my-next-app",
-                                        tree: projectTree,
-                                        onChange: setProjectTree,
-                                        className: "min-h-0 flex-1"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/create/page.tsx",
-                                        lineNumber: 400,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/create/page.tsx",
-                                lineNumber: 380,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/create/page.tsx",
-                        lineNumber: 315,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/create/page.tsx",
+                                            lineNumber: 347,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "scrollbar-none flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto pr-1",
+                                            children: [
+                                                messages.map((message, index)=>{
+                                                    const isThinkingMessage = isSubmitting && index === messages.length - 1 && message === "Thinking...";
+                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: `flex items-end gap-2 ${index % 2 === 0 ? "justify-start" : "justify-end"}`,
+                                                        children: [
+                                                            index % 2 === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: "/logo.png",
+                                                                alt: "EaseFolder",
+                                                                className: "h-6 w-6 shrink-0 rounded-full border border-white/10 object-cover"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/create/page.tsx",
+                                                                lineNumber: 373,
+                                                                columnNumber: 25
+                                                            }, this) : null,
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: `max-w-[85%] rounded-[1.25rem] px-4 py-3 text-sm leading-6 transition duration-200 hover:-translate-y-0.5 ${index % 2 === 0 ? "bg-white/6 text-white" : "bg-white/12 text-white"}`,
+                                                                children: isThinkingMessage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-shimmer font-medium",
+                                                                    children: "Thinking..."
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/app/create/page.tsx",
+                                                                    lineNumber: 387,
+                                                                    columnNumber: 27
+                                                                }, this) : message
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/create/page.tsx",
+                                                                lineNumber: 379,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, index, true, {
+                                                        fileName: "[project]/app/create/page.tsx",
+                                                        lineNumber: 366,
+                                                        columnNumber: 21
+                                                    }, this);
+                                                }),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    id: "latest-message-anchor"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/create/page.tsx",
+                                                    lineNumber: 397,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/create/page.tsx",
+                                            lineNumber: 358,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$ai$2d$prompt$2d$box$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PromptInputBox"], {
+                                                placeholder: "Ask the AI to create a project structure...",
+                                                className: "w-full border-white/8 bg-[#151515]",
+                                                isSubmitting: isSubmitting,
+                                                onSend: handleSendMessage
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/create/page.tsx",
+                                                lineNumber: 401,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/create/page.tsx",
+                                            lineNumber: 400,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/create/page.tsx",
+                                    lineNumber: 342,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                                    className: `flex h-full min-h-0 flex-1 flex-col overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(8,8,8,1)_100%)] p-4 text-white sm:p-6 ${mobilePanel === "chat" ? "hidden lg:flex" : "flex"}`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mb-4 flex items-center justify-between",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-xs uppercase tracking-[0.35em] text-white/45",
+                                                            children: "Folder Preview"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/create/page.tsx",
+                                                            lineNumber: 417,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                            className: "mt-2 font-heading text-2xl font-bold sm:text-3xl",
+                                                            children: "Live folder preview"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/create/page.tsx",
+                                                            lineNumber: 420,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/create/page.tsx",
+                                                    lineNumber: 416,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    type: "button",
+                                                    onClick: handleExportZip,
+                                                    disabled: isExporting,
+                                                    className: "rounded-xl border border-white/70 bg-white px-4 py-2 text-sm font-semibold text-[#101114] shadow-[0_14px_35px_rgba(255,255,255,0.16)] transition duration-200 hover:-translate-y-0.5 hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-70",
+                                                    children: isExporting ? "Exporting..." : "Export ZIP"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/create/page.tsx",
+                                                    lineNumber: 424,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/create/page.tsx",
+                                            lineNumber: 415,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$project$2d$explorer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ProjectExplorer"], {
+                                            projectName: "my-next-app",
+                                            tree: projectTree,
+                                            onChange: setProjectTree,
+                                            className: "min-h-0 flex-1"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/create/page.tsx",
+                                            lineNumber: 434,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/create/page.tsx",
+                                    lineNumber: 410,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/create/page.tsx",
+                            lineNumber: 341,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/app/create/page.tsx",
-                    lineNumber: 314,
+                    lineNumber: 315,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/create/page.tsx",
-                lineNumber: 313,
+                lineNumber: 314,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/create/page.tsx",
-        lineNumber: 311,
+        lineNumber: 312,
         columnNumber: 5
     }, this);
 }
-_s(CreatePage, "jUtiXxY4SvfRKoOyeImAsEcan0g=");
+_s(CreatePage, "GVj4hiQaMXQfBdXyjsNpi9ESLXE=");
 _c = CreatePage;
 var _c;
 __turbopack_context__.k.register(_c, "CreatePage");
@@ -551,6 +583,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up.mjs [app-client] (ecmascript) <export default as ArrowUp>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mic.mjs [app-client] (ecmascript) <export default as Mic>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2d$off$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MicOff$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mic-off.mjs [app-client] (ecmascript) <export default as MicOff>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -562,9 +595,65 @@ function PromptInputBox({ onSend = ()=>{}, placeholder = "Type your message here
     _s();
     const [input, setInput] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState("");
     const [isRecording, setIsRecording] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const recognitionRef = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const stopRecording = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useCallback({
+        "PromptInputBox.useCallback[stopRecording]": ()=>{
+            recognitionRef.current?.stop();
+            setIsRecording(false);
+        }
+    }["PromptInputBox.useCallback[stopRecording]"], []);
+    const startRecording = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useCallback({
+        "PromptInputBox.useCallback[startRecording]": ()=>{
+            const SpeechRecognitionCtor = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognitionCtor) {
+                window.alert("Voice input is not supported in this browser.");
+                return;
+            }
+            if (recognitionRef.current) {
+                recognitionRef.current.stop();
+            }
+            const recognition = new SpeechRecognitionCtor();
+            recognition.lang = "en-US";
+            recognition.continuous = false;
+            recognition.interimResults = true;
+            recognition.onresult = ({
+                "PromptInputBox.useCallback[startRecording]": (event)=>{
+                    const transcript = Array.from(event.results).map({
+                        "PromptInputBox.useCallback[startRecording].transcript": (result)=>result[0]?.transcript ?? ""
+                    }["PromptInputBox.useCallback[startRecording].transcript"]).join("").trim();
+                    if (transcript) {
+                        setInput(transcript);
+                    }
+                }
+            })["PromptInputBox.useCallback[startRecording]"];
+            recognition.onerror = ({
+                "PromptInputBox.useCallback[startRecording]": ()=>{
+                    setIsRecording(false);
+                }
+            })["PromptInputBox.useCallback[startRecording]"];
+            recognition.onend = ({
+                "PromptInputBox.useCallback[startRecording]": ()=>{
+                    setIsRecording(false);
+                }
+            })["PromptInputBox.useCallback[startRecording]"];
+            recognitionRef.current = recognition;
+            setIsRecording(true);
+            recognition.start();
+        }
+    }["PromptInputBox.useCallback[startRecording]"], []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useEffect({
+        "PromptInputBox.useEffect": ()=>{
+            return ({
+                "PromptInputBox.useEffect": ()=>{
+                    recognitionRef.current?.stop();
+                }
+            })["PromptInputBox.useEffect"];
+        }
+    }["PromptInputBox.useEffect"], []);
     const hasContent = input.trim().length > 0;
     const sendMessage = ()=>{
         if (!hasContent) return;
+        stopRecording();
         onSend(input);
         setInput("");
     };
@@ -576,20 +665,32 @@ function PromptInputBox({ onSend = ()=>{}, placeholder = "Type your message here
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
-                        onClick: ()=>setIsRecording((value)=>!value),
+                        onClick: ()=>{
+                            if (isRecording) {
+                                stopRecording();
+                            } else {
+                                startRecording();
+                            }
+                        },
                         disabled: isSubmitting,
                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("mb-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/75 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-white/8 hover:text-white", isRecording && "bg-white text-[#1F2023] hover:bg-white", isSubmitting && "cursor-not-allowed opacity-60 hover:translate-y-0"),
-                        "aria-label": "Voice input",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__["Mic"], {
+                        "aria-label": isRecording ? "Stop voice input" : "Start voice input",
+                        children: isRecording ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2d$off$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MicOff$3e$__["MicOff"], {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                            lineNumber: 50,
-                            columnNumber: 11
+                            lineNumber: 112,
+                            columnNumber: 13
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__["Mic"], {
+                            className: "h-4 w-4"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ui/ai-prompt-box.tsx",
+                            lineNumber: 114,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                        lineNumber: 39,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -604,10 +705,10 @@ function PromptInputBox({ onSend = ()=>{}, placeholder = "Type your message here
                             event.preventDefault();
                             sendMessage();
                         },
-                        className: "max-h-40 min-h-23 w-full resize-none overflow-y-auto rounded-[1.1rem] border-0 bg-transparent py-2.5 pl-0 pr-1 text-left text-sm leading-6 text-white placeholder:text-white/30 focus:outline-none sm:min-h-26 sm:text-[15px]"
+                        className: "max-h-40 min-h-23 w-full resize-none overflow-y-auto rounded-[1.1rem] border-0 bg-transparent py-2.5 pl-0 pr-1 text-left text-sm leading-6 text-white placeholder:text-white/30 [scrollbar-width:none] [-ms-overflow-style:none] focus:outline-none [&::-webkit-scrollbar]:hidden sm:min-h-26 sm:text-[15px]"
                     }, void 0, false, {
                         fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                        lineNumber: 53,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -620,35 +721,35 @@ function PromptInputBox({ onSend = ()=>{}, placeholder = "Type your message here
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                            lineNumber: 81,
+                            lineNumber: 146,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                        lineNumber: 68,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                lineNumber: 38,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mt-2 border-t border-white/10 pt-2"
             }, void 0, false, {
                 fileName: "[project]/components/ui/ai-prompt-box.tsx",
-                lineNumber: 85,
+                lineNumber: 150,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/ui/ai-prompt-box.tsx",
-        lineNumber: 32,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
-_s(PromptInputBox, "ESrkNP0wpvWsux/4BY1Ji8KbEeU=");
+_s(PromptInputBox, "tFqCW/fM0AFaCva4/g5Ad3PKSUc=");
 _c = PromptInputBox;
 var _c;
 __turbopack_context__.k.register(_c, "PromptInputBox");
@@ -677,7 +778,7 @@ function Navbar({ isLightMode }) {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "fixed inset-x-0 top-4 z-50 flex justify-center px-2",
+        className: "fixed inset-x-0 top-4 z-50 flex justify-center px-2 pl-1",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: `flex max-w-full flex-wrap items-center gap-5 overflow-x-auto rounded-xl border p-1 shadow-[0_18px_50px_rgba(0,0,0,0.28)] backdrop-blur-2xl sm:flex-nowrap ${isLightMode ? "border-white/40 bg-white/25 text-zinc-900 shadow-black/5" : "border-zinc-700 bg-zinc-900/60 text-white"}`,
             children: [
@@ -1007,7 +1108,8 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
             y: event.clientY,
             parentId,
             nodeId: row.id,
-            nodeType: row.type
+            nodeType: row.type,
+            kind: "context"
         });
     };
     const copySelectedPath = async (row)=>{
@@ -1184,12 +1286,12 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             children: "Files"
                         }, void 0, false, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 596,
+                            lineNumber: 597,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 595,
+                        lineNumber: 596,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1217,18 +1319,18 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 628,
+                            lineNumber: 629,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 601,
+                        lineNumber: 602,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 594,
+                lineNumber: 595,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1287,43 +1389,43 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                                lineNumber: 697,
+                                                lineNumber: 698,
                                                 columnNumber: 25
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                                lineNumber: 699,
+                                                lineNumber: 700,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/ui/project-explorer.tsx",
-                                            lineNumber: 681,
+                                            lineNumber: 682,
                                             columnNumber: 21
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "mr-1 h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ui/project-explorer.tsx",
-                                            lineNumber: 703,
+                                            lineNumber: 704,
                                             columnNumber: 21
                                         }, this),
                                         row.type === "root" || row.type === "folder" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Folder$3e$__["Folder"], {
                                             className: "h-4 w-4 shrink-0 text-white/70"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ui/project-explorer.tsx",
-                                            lineNumber: 707,
+                                            lineNumber: 708,
                                             columnNumber: 21
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
                                             className: "h-4 w-4 shrink-0 text-white/70"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ui/project-explorer.tsx",
-                                            lineNumber: 709,
+                                            lineNumber: 710,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 676,
+                                    lineNumber: 677,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1350,36 +1452,36 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                         className: "w-full rounded-lg border border-white/10 bg-black/40 px-2 py-1 text-sm text-white outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ui/project-explorer.tsx",
-                                        lineNumber: 715,
+                                        lineNumber: 716,
                                         columnNumber: 21
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "block truncate text-sm leading-6",
                                         children: row.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/ui/project-explorer.tsx",
-                                        lineNumber: 741,
+                                        lineNumber: 742,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 713,
+                                    lineNumber: 714,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 670,
+                            lineNumber: 671,
                             columnNumber: 15
                         }, this)
                     }, row.id, false, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 641,
+                        lineNumber: 642,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 632,
+                lineNumber: 633,
                 columnNumber: 7
             }, this),
             contextMenu ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1400,7 +1502,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("file", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 764,
+                                lineNumber: 765,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1409,13 +1511,13 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("folder", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 769,
+                                lineNumber: 770,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 763,
+                        lineNumber: 764,
                         columnNumber: 15
                     }, this) : contextMenu.nodeType === "root" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
@@ -1425,7 +1527,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("file", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 777,
+                                lineNumber: 778,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1434,12 +1536,12 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("folder", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 782,
+                                lineNumber: 783,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuDivider, {}, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 787,
+                                lineNumber: 788,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1448,13 +1550,13 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>copySelectedPath(selectedRow)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 788,
+                                lineNumber: 789,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 776,
+                        lineNumber: 777,
                         columnNumber: 15
                     }, this) : contextMenu.nodeType === "folder" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
@@ -1464,7 +1566,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("file", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 796,
+                                lineNumber: 797,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1473,12 +1575,12 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openCreateDialog("folder", contextMenu.parentId)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 801,
+                                lineNumber: 802,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuDivider, {}, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 806,
+                                lineNumber: 807,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1487,7 +1589,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openRename(contextMenu.nodeId ?? ROOT_NODE_ID)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 807,
+                                lineNumber: 808,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1507,12 +1609,12 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 812,
+                                lineNumber: 813,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuDivider, {}, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 829,
+                                lineNumber: 830,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1526,13 +1628,13 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 830,
+                                lineNumber: 831,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 795,
+                        lineNumber: 796,
                         columnNumber: 15
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
@@ -1542,7 +1644,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 onClick: ()=>openRename(contextMenu.nodeId ?? ROOT_NODE_ID)
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 844,
+                                lineNumber: 845,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1562,12 +1664,12 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 849,
+                                lineNumber: 850,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuDivider, {}, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 866,
+                                lineNumber: 867,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItem, {
@@ -1581,23 +1683,23 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/project-explorer.tsx",
-                                lineNumber: 867,
+                                lineNumber: 868,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ui/project-explorer.tsx",
-                        lineNumber: 843,
+                        lineNumber: 844,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/ui/project-explorer.tsx",
-                    lineNumber: 754,
+                    lineNumber: 755,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 753,
+                lineNumber: 754,
                 columnNumber: 9
             }, this) : null,
             createDialog ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1612,7 +1714,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             children: createDialog.label
                         }, void 0, false, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 890,
+                            lineNumber: 891,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1636,7 +1738,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             className: "mt-4 w-full rounded-xl border border-white/10 bg-black/40 px-3 py-2 text-sm text-white outline-none placeholder:text-white/25"
                         }, void 0, false, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 891,
+                            lineNumber: 892,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1649,7 +1751,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 912,
+                                    lineNumber: 913,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1659,24 +1761,24 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                     children: "Create"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 919,
+                                    lineNumber: 920,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 911,
+                            lineNumber: 912,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/project-explorer.tsx",
-                    lineNumber: 886,
+                    lineNumber: 887,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 885,
+                lineNumber: 886,
                 columnNumber: 9
             }, this) : null,
             deleteState ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1695,7 +1797,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 937,
+                            lineNumber: 938,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1703,7 +1805,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                             children: deleteState.type === "folder" ? "This will remove the folder and everything inside it." : "This will remove the file from the project."
                         }, void 0, false, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 938,
+                            lineNumber: 939,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1716,7 +1818,7 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 945,
+                                    lineNumber: 946,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1726,30 +1828,30 @@ function ProjectExplorer({ projectName, tree, onChange, className }) {
                                     children: "Delete"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/project-explorer.tsx",
-                                    lineNumber: 952,
+                                    lineNumber: 953,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/project-explorer.tsx",
-                            lineNumber: 944,
+                            lineNumber: 945,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/project-explorer.tsx",
-                    lineNumber: 933,
+                    lineNumber: 934,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 932,
+                lineNumber: 933,
                 columnNumber: 9
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/components/ui/project-explorer.tsx",
-        lineNumber: 584,
+        lineNumber: 585,
         columnNumber: 5
     }, this);
 }
@@ -1760,7 +1862,7 @@ function MenuDivider() {
         className: "my-2 h-px bg-white/10"
     }, void 0, false, {
         fileName: "[project]/components/ui/project-explorer.tsx",
-        lineNumber: 968,
+        lineNumber: 969,
         columnNumber: 10
     }, this);
 }
@@ -1775,20 +1877,20 @@ function MenuItem({ icon: Icon, label, onClick }) {
                 className: "h-4 w-4 text-white/60"
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 986,
+                lineNumber: 987,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/ui/project-explorer.tsx",
-                lineNumber: 987,
+                lineNumber: 988,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/ui/project-explorer.tsx",
-        lineNumber: 981,
+        lineNumber: 982,
         columnNumber: 5
     }, this);
 }

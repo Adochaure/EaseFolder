@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowUp, Mic } from "lucide-react";
+import { ArrowUp, Mic, MicOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PromptInputBoxProps {
@@ -19,11 +19,66 @@ export function PromptInputBox({
 }: PromptInputBoxProps) {
   const [input, setInput] = React.useState("");
   const [isRecording, setIsRecording] = React.useState(false);
+  const recognitionRef = React.useRef<SpeechRecognition | null>(null);
+
+  const stopRecording = React.useCallback(() => {
+    recognitionRef.current?.stop();
+    setIsRecording(false);
+  }, []);
+
+  const startRecording = React.useCallback(() => {
+    const SpeechRecognitionCtor =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognitionCtor) {
+      window.alert("Voice input is not supported in this browser.");
+      return;
+    }
+
+    if (recognitionRef.current) {
+      recognitionRef.current.stop();
+    }
+
+    const recognition = new SpeechRecognitionCtor();
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = true;
+
+    recognition.onresult = (event: SpeechRecognitionEventLike) => {
+      const transcript = Array.from(event.results as ArrayLike<readonly [{ transcript: string }]>)
+        .map((result) => result[0]?.transcript ?? "")
+        .join("")
+        .trim();
+
+      if (transcript) {
+        setInput(transcript);
+      }
+    };
+
+    recognition.onerror = () => {
+      setIsRecording(false);
+    };
+
+    recognition.onend = () => {
+      setIsRecording(false);
+    };
+
+    recognitionRef.current = recognition;
+    setIsRecording(true);
+    recognition.start();
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      recognitionRef.current?.stop();
+    };
+  }, []);
 
   const hasContent = input.trim().length > 0;
 
   const sendMessage = () => {
     if (!hasContent) return;
+    stopRecording();
     onSend(input);
     setInput("");
   };
@@ -38,16 +93,26 @@ export function PromptInputBox({
       <div className="flex items-end gap-2">
         <button
           type="button"
-          onClick={() => setIsRecording((value) => !value)}
+          onClick={() => {
+            if (isRecording) {
+              stopRecording();
+            } else {
+              startRecording();
+            }
+          }}
           disabled={isSubmitting}
           className={cn(
             "mb-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/4 text-white/75 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-white/8 hover:text-white",
             isRecording && "bg-white text-[#1F2023] hover:bg-white",
             isSubmitting && "cursor-not-allowed opacity-60 hover:translate-y-0",
           )}
-          aria-label="Voice input"
+          aria-label={isRecording ? "Stop voice input" : "Start voice input"}
         >
-          <Mic className="h-4 w-4" />
+          {isRecording ? (
+            <MicOff className="h-4 w-4" />
+          ) : (
+            <Mic className="h-4 w-4" />
+          )}
         </button>
 
         <textarea
@@ -63,7 +128,7 @@ export function PromptInputBox({
             event.preventDefault();
             sendMessage();
           }}
-          className="max-h-40 min-h-23 w-full resize-none overflow-y-auto rounded-[1.1rem] border-0 bg-transparent py-2.5 pl-0 pr-1 text-left text-sm leading-6 text-white placeholder:text-white/30 focus:outline-none sm:min-h-26 sm:text-[15px]"
+          className="max-h-40 min-h-23 w-full resize-none overflow-y-auto rounded-[1.1rem] border-0 bg-transparent py-2.5 pl-0 pr-1 text-left text-sm leading-6 text-white placeholder:text-white/30 [scrollbar-width:none] [-ms-overflow-style:none] focus:outline-none [&::-webkit-scrollbar]:hidden sm:min-h-26 sm:text-[15px]"
         />
         <button
           type="button"
