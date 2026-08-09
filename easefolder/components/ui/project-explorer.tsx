@@ -372,6 +372,7 @@ export function ProjectExplorer({
       parentId,
       nodeId: row.id,
       nodeType: row.type,
+      kind: "context",
     });
   };
 

@@ -131,10 +131,13 @@ function applyRename(
   newName: string,
 ): ProjectNode[] {
   const location = getNodeOrThrow(tree, path);
+  if (!location.node) {
+    throw new ProjectValidationError(`Path not found: ${path}`);
+  }
   const nextName = ensurePathSegmentIsValid(newName);
   const siblings = getSiblingNodes(tree, location);
 
-  ensureUniqueSiblingName(siblings, nextName, location.node?.id);
+  ensureUniqueSiblingName(siblings, nextName, location.node.id);
 
   return renameNode(tree, location.node.id, nextName);
 }
@@ -144,6 +147,10 @@ function applyDelete(tree: ProjectNode[], path: string): ProjectNode[] {
 
   if (location.isRoot) {
     throw new ProjectValidationError("Deleting the project root is not allowed.");
+  }
+
+  if (!location.node) {
+    throw new ProjectValidationError(`Path not found: ${path}`);
   }
 
   return deleteNode(tree, location.node.id);
@@ -158,6 +165,10 @@ function applyMove(
 
   if (sourceLocation.isRoot) {
     throw new ProjectValidationError("Moving the project root is not allowed.");
+  }
+
+  if (!sourceLocation.node) {
+    throw new ProjectValidationError(`Path not found: ${path}`);
   }
 
   const destinationLocation = resolveRelativePath(destination, { allowRoot: true }).isRoot

@@ -1,4 +1,5 @@
 import { ImagesBadge } from "@/components/ui/images-badge";
+import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
@@ -127,6 +128,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
