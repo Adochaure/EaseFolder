@@ -6,7 +6,7 @@ export default function Navbar({ isLightMode }: NavbarProps) {
   const navItems = [
     {
       name: "About us",
-      href: "#features",
+      href: "#footer",
     },
     {
       name: "How It Works",

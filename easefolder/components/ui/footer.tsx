@@ -1,6 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-4xl border-dotted border-[#dad8d8] px-4 py-8 sm:px-6 md:border-x">
+    <footer
+      id="footer"
+      className="mx-auto max-w-4xl border-dotted border-[#dad8d8] px-4 py-8 sm:px-6 md:border-x"
+    >
       <div className="flex flex-col items-center justify-between gap-3 border-t border-dotted border-[rgba(0,114,143,0.35)] pt-6 text-center sm:flex-row sm:text-left">
         <p className="text-sm text-zinc-700 sm:text-[15px]">
           © 2026 EaseFolder. Build, refine, and ship folder structures faster.
